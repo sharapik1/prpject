@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LogInActivity">
+    tools:context=".auth.LogInActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -50,6 +50,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Пароль"
+                android:inputType="textPassword"
                 android:padding="10dp"
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/border"/>
@@ -71,7 +72,8 @@
                 android:padding="10dp"
                 android:gravity="center"
                 android:textColor="#2B70A8"
-                android:background="@drawable/border"/>
+                android:background="@drawable/border"
+                android:onClick="logUp"/>
 
 
 

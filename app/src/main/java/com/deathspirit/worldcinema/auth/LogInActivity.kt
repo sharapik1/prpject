@@ -1,4 +1,4 @@
-package com.deathspirit.worldcinema
+package com.deathspirit.worldcinema.auth
 
 import android.app.AlertDialog
 import android.content.Intent
@@ -7,6 +7,8 @@ import android.os.Bundle
 import android.view.View
 import android.widget.EditText
 import android.widget.Toast
+import com.deathspirit.worldcinema.films.MainActivity
+import com.deathspirit.worldcinema.R
 import com.deathspirit.worldcinema.common.HTTP
 import com.deathspirit.worldcinema.common.MyApp
 import org.json.JSONObject
@@ -81,6 +83,10 @@ class LogInActivity : AppCompatActivity() {
                 .create()
                 .show()
         }
+    }
+
+    fun logUp(view: View) {
+        startActivity(Intent(this, LogUpActivity::class.java))
     }
 
 }
